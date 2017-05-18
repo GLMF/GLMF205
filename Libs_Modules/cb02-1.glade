@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.19.0 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkApplicationWindow" id="window1">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">200</property>
+    <property name="default_height">200</property>
+    <property name="icon_name">tic-tac-toe</property>
+    <property name="gravity">center</property>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>

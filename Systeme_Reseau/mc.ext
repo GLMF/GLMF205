@@ -1,0 +1,45 @@
+# Traitement des images
+regex/\.(png|PNG)$
+    Include=image
+ 
+regex/\.(jpg|JPG|jpeg|JPEG])$
+    Include=image
+
+include/image
+    View=gimp %f &
+    Open=gwenview %f &
+    Edit=shutter %p &
+
+
+# Traitement des pdf
+regex/\.(pdf|PDF)$
+    Open=masterpdfeditor4 %f &
+
+
+# Traitement des fichiers de code
+regex/\.(py|c|h|sh|java|asm)$
+    View=gedit %s &
+    Open=vi %s 
+
+# Traitement des fichiers libreoffice
+regex/\.(odt|ods|odf|odp|doc|docx|xls|xlsx)$
+    Open=(libreoffice %s &)
+
+# Traitement des fichiers html
+regex/\.(html|HTML)$
+    View=gedit %f
+    Open=(google-chrome %f &)
+    Edit=vi %f
+
+### Archives ###
+
+# .tgz, .tpz, .tar.gz, .tar.z, .tar.Z, .ipk, .gem
+regex/\.t([gp]?z|ar\.g?[zZ])$|\.ipk$|\.gem$
+	Open=%cd %p/utar://
+	View=%view{ascii} /usr/lib/mc/ext.d/archive.sh view tar.gz
+
+
+
+
+
+

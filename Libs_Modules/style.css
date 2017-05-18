@@ -1,0 +1,19 @@
+GtkButton.joueur1 {
+  background-image:url('j1.png');
+  background-repeat:no-repeat;
+  background-position:center;
+}
+GtkButton.joueur2 {
+  background-image:url('j2.png');
+  background-repeat:no-repeat;
+  background-position:center;
+}
+GtkButton.win {
+  background-color:#FFFF00;/* jaune */
+}
+GtkStatusbar.joueur1 GtkLabel {
+  color:#FF0000;
+}
+GtkStatusbar.joueur2 GtkLabel {
+  color:#0000FF;
+}

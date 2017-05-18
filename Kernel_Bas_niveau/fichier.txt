@@ -1,0 +1,3 @@
+Ceci est un petit exemple.
+Il s'agit d'un simple fichier texte.
+Avec des accents éàù...
